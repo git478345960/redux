@@ -7,13 +7,13 @@ class Counter extends Component {
     this.incrementAsync = this.incrementAsync.bind(this);
     this.incrementIfOdd = this.incrementIfOdd.bind(this);
   }
-
+// 如果是奇数就增加
   incrementIfOdd() {
     if (this.props.value % 2 !== 0) {
       this.props.onIncrement()
     }
   }
-
+// 异步
   incrementAsync() {
     setTimeout(this.props.onIncrement, 1000)
   }
