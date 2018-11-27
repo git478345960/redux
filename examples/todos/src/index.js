@@ -13,3 +13,12 @@ render(
   </Provider>,
   document.getElementById('root')
 )
+
+
+
+function add(){
+  // console.log(store.getState());
+}
+
+let unsubscribe = store.subscribe(add);
+
